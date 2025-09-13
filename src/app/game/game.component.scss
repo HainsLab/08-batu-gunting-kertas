@@ -4,7 +4,7 @@
   margin-top: 50px; 
 }
 
-.choices{
+.choices {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -20,7 +20,7 @@
     cursor: pointer;
     border-radius: 8px;
     font-size: 17px;
-    transition: 0,2s, background-color 0.2s;
+    transition: 0.2s, background-color 0.2s;
 }
 
 .choices button:hover {
@@ -28,24 +28,24 @@
     background-color: #ececec;
 }
 
-.choices img{
+.choices img {
     width: 150px;
     height: 150px;
     margin-bottom: 5px;
 }
 
-.results img{
+.results img {
     width: 120px;
     height: 120px;
     vertical-align: middle;
     margin-left: 5px;
 }
 
-img{
+img {
     border-radius: 3px;
 }
 
-.results{
+.results {
     margin-top: 30px;
     font-size: 20px;
 }
