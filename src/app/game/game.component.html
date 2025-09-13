@@ -1,0 +1,23 @@
+<div class="game-container">
+
+    <h1>Batu Gunting Kertas</h1>
+
+    <div class="choices">
+        <button *ngFor="let choice of choices" (click)="play(choice)">
+            <img [src]="choice.toLowerCase() + '.jpeg'" [alt]="choice">
+            {{ choice }}
+        </button>
+    </div>
+    <div class="results" *ngIf="playerChoice && computerChoice">
+        <p>
+            Kamu memilih: <strong>{{ playerChoice }}</strong>
+            <img [src]="playerChoice.toLowerCase() + '.jpeg'" [alt]="playerChoice" class="choice-image">
+        </p>
+        <p>
+            Komputer memilih: <strong>{{ computerChoice }}</strong>
+            <img [src]="computerChoice.toLowerCase() + '.jpeg'" [alt]="computerChoice" class="choice-image">
+        </p>
+        <h2>{{ result }}</h2>
+
+    </div>
+</div>
