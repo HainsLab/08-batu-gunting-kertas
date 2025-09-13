@@ -13,8 +13,8 @@ export class GameComponent {
   computerChoice: string | null = null;
   result: string | null = null;
 
-  getRandomNumber(mmax: number): number {
-    return Math.floor(Math.random() * mmax);
+  getRandomNumber(max: number): number {
+    return Math.floor(Math.random() * max);
   }
 
   determineWinner(player: string, computer: string): string {
